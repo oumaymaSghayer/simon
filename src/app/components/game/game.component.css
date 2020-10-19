@@ -1,0 +1,31 @@
+.container {
+  width: 350px;
+  padding: 5%;
+}
+.flex {
+  display: flex;
+  padding: 10px;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.two {
+  justify-content: space-between;
+}
+.count {
+  color: #fff;
+  font-size: 2rem;
+}
+.restart {
+  background-color: #3107df;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 50px;
+  cursor: pointer;
+}

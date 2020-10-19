@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="flex center">
+        <app-button [active]="active.red" color='red' (guess)="playerGuess($event)" ></app-button>
+    </div>
+   
+    <div class="flex two">
+        <app-button  [active]="active.yellow" color='yellow' (guess)="playerGuess($event)"></app-button>
+        <h2 class="count">{{count}}   </h2>
+        <app-button [active]="active.blue" color='blue' (guess)="playerGuess($event)"></app-button>
+    </div>
+
+
+    <div class="flex center">
+        <app-button [active]="active.green" color='green' (guess)="playerGuess($event)"></app-button>
+    </div>
+
+    <div style="flex-direction: column; " class="flex center">
+        <p  *ngIf="lost" >Woops , start over!</p>
+        <button class="restart" (click)="restart()"> Restart
+        </button>
+    </div>
+</div>
+
